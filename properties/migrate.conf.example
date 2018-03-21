@@ -1,0 +1,13 @@
+#liquibase --defaultsFile=properties/migrate.conf.example update
+
+#driver
+driver: org.postgresql.Driver
+classpath: C:/liquibase/lib/postgresql-42.1.4.jar
+
+#connect
+url: jdbc:postgresql://hostname:5432/dbname
+username: dbuser
+password: dbpass
+
+#changelog
+changeLogFile: migrations/changelog.yaml
